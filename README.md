@@ -1,6 +1,7 @@
 # mqtt-appindicator
 This appindicator subscribe to MQTT topics and show messages from them.
 It shows messages in the notification area (system tray) on Ubuntu Unity and in Gnome.
+By default it shows last 10 messages. You can hide them by clciking.
 
 # Screenshots
 
@@ -28,14 +29,14 @@ You'll need at least the following components:
 
 # Instalithion
 1. Clone this repository into a fresh directory
-2. Edit config file ```~/.mqtt-appindicator.ini``` (see _Configuration_)
+2. Edit config file ```mqtt-appindicator.ini``` (see _Configuration_)
 3. Launch ```mqtt-appindicator.py```
 4. Add app to startup application by using ```gnome-session-properties``` for example
 
 
 # Configuration
 
-Settings are storing in ```~/.mqtt-appindicator.ini``` file (it's creates automaticaly after first run).
+Settings are storing in ```mqtt-appindicator.ini``` file (it's creates automaticaly after first run).
 ```ini
 [mqtt_broker]
 mqtt_server = localhost
