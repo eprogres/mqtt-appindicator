@@ -26,7 +26,7 @@ gtk.gdk.threads_init()
 
 # Config
 APP_NAME = 'mqtt-appindicator'
-WORK_DIR = os.path.abspath(os.path.curdir) + '/'
+WORK_DIR = os.path.dirname(sys.argv[0]) + '/'
 CONFIGFILE = WORK_DIR + APP_NAME + '.ini'
 config_section = 'mqtt_broker'
 icon_ok = WORK_DIR + 'icons/mqtticon.png'
