@@ -43,7 +43,6 @@ class MQTTIndicator:
         # create an indicator applet
         self.ind = appindicator.Indicator('MQTT Tray', 'mqtt-messages', appindicator.CATEGORY_APPLICATION_STATUS)
         self.ind.set_status(appindicator.STATUS_ACTIVE)
-        self.ind.set_attention_icon('indicator-messages-new')
         self.set_icon(False)
         self.item = ''
         self.items_max = 10  # maximum number of items
