@@ -82,7 +82,7 @@ class MQTTIndicator:
             # TODO Remove not all items in more beautiful way
             count = 1
             for i in self.menu.get_children():
-                if hasattr(i, 'mqtt_msq') and count == self.items_max:
+                if count == self.items_max:
                     self.menu.remove(i)
                 count += 1
         # Add new item
